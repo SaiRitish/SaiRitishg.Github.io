@@ -1,1 +1,1 @@
-# first-website
+Starter project to build your first website
