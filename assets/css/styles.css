@@ -10,6 +10,9 @@ body{
     
 }
 
+.layout{
+    color: #0000ff;
+}
 table tr:first-child{
     background-color: rgba(250, 250, 250, 0.8)  
 }
