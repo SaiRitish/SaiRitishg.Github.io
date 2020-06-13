@@ -10,7 +10,7 @@ body{
     
 }
 
-table tr:even{
+table tr:first-child{
     background-color: rgba(250, 250, 250, 0.8)  
 }
 
