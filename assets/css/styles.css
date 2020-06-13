@@ -11,7 +11,8 @@ body{
 }
 
 .layout{
-    color: #0000ff;
+    color: #5959c4;
+    font-family: cursive;
 }
 table tr:first-child{
     background-color: rgba(250, 250, 250, 0.8)  
