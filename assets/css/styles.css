@@ -1,25 +1,5 @@
-body{
-    background-color: rgba(250, 150, 150, 0.8)
-}
 
-#profile_image{
-    border: 2px dotted black;
-}
-
-.layout{
-    
-}
-
-.layout{
-    color: #5959c4;
-    font-family: cursive;
-}
-table tr:first-child{
-    background-color: rgba(250, 250, 250, 0.8)  
-}
-
-
-.myheader {
+.naman-centerheader {
   text-align: center;
   background-color: white;
 }
