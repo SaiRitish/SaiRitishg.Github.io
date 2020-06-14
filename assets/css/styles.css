@@ -19,3 +19,7 @@ table tr:first-child{
 }
 
 
+.myheader {
+  text-align: center;
+  background-color: white;
+}
