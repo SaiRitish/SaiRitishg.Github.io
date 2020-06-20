@@ -10,4 +10,4 @@ pages:
     paths:
       - public
   only:
-    - master
+    - master_20_06_2020
