@@ -1,99 +1,881 @@
-<!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title> 😂 Naman Bhalla</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+ <!-- Main navigation -->
+    <!DOCTYPE html>
+    <html>
+    <head> 
+        <title></title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <script src="assets/javascript/index.js"></script>
-        
-      <!-- CSS only -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
     </head>
     <body>
+        <style type="text/css">
 
-                  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <i class="fab fal fa-500px" style="margin:10px"></i>
-          <a class="navbar-brand" href="#">Naman Bhalla</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#">Work Experience</a>
-                </li>
-              </ul>
+            /* Required for full background image */
+
+            html,
+            body,
+            header,
+            #intro-section {
+                height: 100%;
+            }
+
+            @media (max-width: 740px) {
+                html,
+                body,
+                header,
+                #intro-section {
+                    height: 100vh;
+                }
+            }
+
+            .top-nav-collapse, .page-footer {
+                background-color: #563e91 !important;
+            }
+
+            .navbar:not(.top-nav-collapse) {
+                background: transparent !important;
+            }
+
+            @media (max-width: 991px) {
+                .navbar:not(.top-nav-collapse) {
+                    background: #563e91 !important;
+                }
+            }
+
+            .rgba-gradient {
+                background: rgba(35, 7, 77, 0.6);
+                /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
+                /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+
+
+            .img-gradient:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(220, 66, 37, 0.5)), color-stop(100%, rgba(0, 47, 75, 0.5)));
+                /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* Opera 11.10+ */
+                /* IE10+ */
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 47, 75, 0.5)), to(rgba(220, 66, 37, 0.5)));
+                background: linear-gradient(to bottom, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000', GradientType=0);
+                /* IE6-9 */
+            }
+
+            img{ max-width:100%;}
+
+.gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
+.gallery_box{ padding:0;display: flow-root;}
+
+.gallery_box li:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.gallery_box li img{-webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;}
+.gallery_box li:nth-child(even) {
+    height: 304px;
+}
+.gallery_box li:nth-child(odd) {
+    height: 438px; 
+}
+.gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
+.gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
+.gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
+.gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
+.gallery_box li:hover .box_data{ background:rgba(255,0,39,0.55)}
+
+        </style>
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#intro">Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-offset="90">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects" data-offset="90">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery" data-offset="90">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials" data-offset="30">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#articles" data-offset="90">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-offset="90">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav white-text">
+                        Made With Love In Scaler Academy
+                    </div>
+                </div>
             </div>
-      </nav>
-<div class="jumbotron naman-centerheader jumbotron-fluid">
-  <img class="naman-profile-pic" src="assets/images/naman.jpg" height="200px" width="200px">
-  <h1 class="display-4">Hi, I am Naman!</h1>
-  <p class="lead">I am a programmer!</p>
-  <hr class="my-4">
+        </nav>
+        <!-- Navbar -->
+        <!-- Full Page Intro -->
+        <div id="intro-section" class="view">
+            <video class="video-intro" poster="https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Best-Retina-Great-Nature-Wallpapers-HD-PIC-WPD0012021.jpg" playsinline
+            autoplay muted loop>
+            <source src="https://www.videezy.com/abstract/18798-beautiful-sunset-over-the-earth-animation" type="video/mp4">
+            </video>
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+                <!-- Content -->
+                <div class="container px-md-3 px-sm-0">
+                    <!--Grid row-->
+                    <div class="row wow fadeIn">
+                        <!--Grid column-->
+                        <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+                            <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">G Sai Ritish</h3>
+                            <hr class="hr-light my-4 w-75">
+                            <h4 class="subtext-header mt-2 mb-4"> Hello, Welcome to my Webpage :)</h4>
+                        </div>
+                        <div class="w3-panel w3-leftbar w3-sand">
+                            <p class="w3-xxxlarge w3-serif white-text">
+                                This Week's Quote </p>
+  <p class="w3-xxlarge w3-serif white-text">
+  <i>"Make it as simple as possible, but not simpler."</i>
+  by:- Albert Einstein</p>
 </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+        </div>
+        <!-- Full Page Intro -->
+    </header>
 
-<section id="projects">
-     <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#projectsCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#projectsCarousel" data-slide-to="1"></li>
-    <li data-target="#projectsCarousel" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active item1">
-            <img src="assets/images/project1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Project 3
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-    </div>
-    <div class="carousel-item item2">
-            <img src=https://image.shutterstock.com/image-photo/colorful-hot-air-balloons-flying-260nw-1033306540.jpg class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Project 2
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        <p> Lol </p>
-      </div>
-    </div>
-    <div class="carousel-item item3">
-            <img src="https://image.shutterstock.com/image-photo/colorful-hot-air-balloons-flying-260nw-1033306540.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Project 1
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-  </div>
-  <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#projectsCarousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+    <!--Main layout-->
+    <main>
+
+        <!--Section: about-->
+        <section id="about" class="py-5">
+
+            <!-- Container -->
+            <div class="container">
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold text-center mb-5">About Me</h2>
+                <!-- Section description -->
+                <p class="lead brown-text text-center w-responsive mx-auto mb-5">I'm Sai Ritish, you can call me Sai, I'm currently                        pursuing my 2nd year ECE at VIT Vellore. I'm hooked up with technology, and I'm keen to learn more. 
+                    Other than that I love listening to music(I hope to sing one day :) ) and playing Basketball!
+
+                </p>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-5 text-center text-lg-left">
+                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg" alt="Sample image">
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-7">
+
+                        <!-- Grid row -->
+                        <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="font-weight-bold mb-3">Heya</h5>
+                                <p class="grey-text">I've always wanted to write my own stories/books, or basically be a small poet,                                   just to be able to make an impact on the society.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                        <!-- Grid row -->
+                        <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="font-weight-bold mb-3">We as humans need to be humane to all living beings.</h5>
+                                <p class="grey-text">Basically I want people to spread more kindness and more love towards every                                       other living being. So this part of me wants to be an activist :)</p>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-1">
+                                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-xl-10 col-md-11 col-10">
+                                <h5 class="font-weight-bold mb-3">I'm a Dreamer</h5>
+                                <p class="grey-text mb-0">So, I've aldready mentioned that I wanna be a poet and an activist. But                                     there are more of me which I think I need to do. I urge y'all to follow your dreams and be the person                                 you want to be because #youdeserveitall!!!</p>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!--Grid row-->
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Container -->
+
+        </section>
+        <!--Section: about-->
+
+        <!--Section: projects-->
+        <section id="projects" class="text-center py-5" style="background-color: #eee;">
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold mb-5">My projects</h2>
+                <!-- Section description -->
+                <p class="grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
+
+                <!-- Grid row -->
+                <div class="row text-center">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg" class="img-fluid" alt="Sample project image">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!--Excerpt-->
+                        <div class="card-body pb-0">
+                            <h4 class="font-weight-bold my-3">Title of the news</h4>
+                            <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                                necessitatibus saepe eveniet ut et voluptates repudiandae.
+                            </p>
+                            <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i> View project</a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/project4.jpg" class="img-fluid" alt="Sample project image">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!--Excerpt-->
+                        <div class="card-body pb-0">
+                            <h4 class="font-weight-bold my-3">Title of the news</h4>
+                            <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                                necessitatibus saepe eveniet ut et voluptates repudiandae.
+                            </p>
+                            <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i> View project</a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6">
+                        <!--Featured image-->
+                        <div class="view overlay rounded z-depth-1">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg" class="img-fluid" alt="Sample project image">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!--Excerpt-->
+                        <div class="card-body pb-0">
+                            <h4 class="font-weight-bold my-3">Title of the news</h4>
+                            <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                                necessitatibus saepe eveniet ut et voluptates repudiandae.
+                            </p>
+                            <a class="btn btn-purple btn-sm"><i class="fa fa-clone left"></i> View project</a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Container -->
+
+        </section>
+        <!--Section: projects-->
+
+        <!--Section: gallery-->
+        <section id="gallery" class="text-center py-5">
+
+            <!-- Container -->
+            <div class="container">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold mb-5">My skills</h2>
+                <!-- Section description -->
+                <p class="brown-text w-responsive mx-auto mb-5">It's never easy for me to say that I'm perfect in something. Yet a few skills I might want to share are these, woah that took a lot of my energy :D</p>
+
+                <ul class="gallery_box">
+    <li>
+        <a href="#0"><img src="https://code.fb.com/wp-content/uploads/2015/06/1522635669452_11.jpg">
+        <div class="box_data">
+            <span>C++</span>
+        </div></a>
+    </li>
+        <li>
+        <a href="#0"><img src="http://weknowyourdreams.com/images/python/python-09.jpg">
+        <div class="box_data">
+            <span>Python</span>
+        </div></a>
+    </li>
+        <li>
+        <a href="#0"><img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png">
+        <div class="box_data">
+            <span>HTML</span>
+        </div></a>
+    </li>
+            <li>
+        <a href="#0"><img src="https://fthmb.tqn.com/zrcb1zA4Vi47uULJhJKJdcshBgk=/1024x1024/filters:fill(auto,1)/css3-57b597e85f9b58b5c2b338de.png">
+        <div class="box_data">
+            <span>CSS</span>
+        </div></a>
+    </li>
+            <li style="position: relative;
+    top: -134px;">
+        <a href="#0"><img src="https://dotnetnuke.nl/Portals/16/EasyDNNnews/18/bootstrap-social-logo.png">
+        <div class="box_data">
+            <span>Bootstrap</span>
+        </div></a>
+    </li>
+            <li>
+        <a href="#0"><img src="https://blog.hubspot.com/hubfs/image8-2.jpg">
+        <div class="box_data">
+            <span>Networking</span>
+        </div></a>
+    </li>
+    <li>
+        <a href="#0"><img src="https://images.vexels.com/media/users/3/140692/isolated/preview/72d1f12edf758d24f5b6db73bac4f297-linux-logo-by-vexels.png">
+        <div class="box_data">
+            <span>Linux</span>
+        </div></a>
+    </li>
+    <li>
+        <a href="#0"><img src="https://image.freepik.com/free-vector/leader-logo_1025-446.jpg">
+        <div class="box_data">
+            <span>Leadership</span>
+        </div></a>
+    </li>
+</ul>
+
+
 </div>
+<!-- Container -->
+
 </section>
+<!--Section: gallery-->
+
+<!--Section: testimonials-->
+<section id="testimonials" class="text-center py-5" style="background-color: #eee;">
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5">Testimonials</h2>
+
+        <!-- Carousel Wrapper -->
+        <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade"
+        data-ride="carousel" data-interval="false">
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto mb-4">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle img-fluid"
+                        alt="First sample avatar image">
+                    </div>
+                    <!--Content-->
+                    <p>
+                        <i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab. Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Dolore cum accusamus eveniet
+                        molestias voluptatum inventore laboriosam labore sit, aspernatur praesentium iste
+                        impedit quidem dolor veniam.
+                    </p>
+                    <h4 class="font-weight-bold">Anna Deynah</h4>
+                    <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+                    <!--Review-->
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star-half-full amber-text"> </i>
+                </div>
+            </div>
+            <!--First slide-->
+            <!--Second slide-->
+            <div class="carousel-item">
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto mb-4">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded-circle img-fluid"
+                        alt="Second sample avatar image">
+                    </div>
+                    <!--Content-->
+                    <p>
+                        <i class="fa fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit
+                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                        sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                    incidunt ut labore. </p>
+                    <h4 class="font-weight-bold">Maria Kate</h4>
+                    <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+                    <!--Review-->
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                </div>
+            </div>
+            <!--Second slide-->
+            <!--Third slide-->
+            <div class="carousel-item">
+                <div class="testimonial">
+                    <!--Avatar-->
+                    <div class="avatar mx-auto mb-4">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid"
+                        alt="Third sample avatar image">
+                    </div>
+                    <!--Content-->
+                    <p>
+                        <i class="fa fa-quote-left"></i> Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque laudantium.</p>
+                    <h4 class="font-weight-bold">John Doe</h4>
+                    <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+                    <!--Review-->
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star amber-text"> </i>
+                    <i class="fa fa-star-o amber-text"> </i>
+                </div>
+            </div>
+            <!--Third slide-->
+        </div>
+        <!--Slides-->
+        <!--Controls-->
+        <a class="carousel-item-prev left carousel-control" href="#carousel-example-1" role="button"
+        data-slide="prev">
+        <span class="icon-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-item-next right carousel-control" href="#carousel-example-1" role="button"
+    data-slide="next">
+    <span class="icon-next" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+</a>
+<!--Controls-->
+</div>
+<!-- Carousel Wrapper -->
+
+</div>
+<!-- Container -->
+
+</section>
+<!--Section: testimonials-->
+
+<!--Section: call to action-->
+<div class="streak streak-md streak-photo" style="background-image:url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img(115).jpg')">
+    <div class="flex-center rgba-black-light pattern-1">
+        <div class="white-text smooth-scroll mx-4">
+            <h2 class="h2-responsive mb-5 wow fadeIn">
+                
+                I am a self motivated Person who is ready to jump into the industry to learn new things and contribute for the organisation                
+            </h2>
+            <div class="text-center">
+                <a href="#contact" class="btn btn-outline-white wow fadeIn " data-offset="100" data-wow-delay="0.2s">Contact
+                me</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Section: call to action-->
+
+<!--Section: articles-->
+<section id="articles" class="text-center py-5">
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5">Blogs</h2>
+
+        <!--Grid row-->
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4">
+
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
+                        alt="Card image cap">
+                        <a>
+                            <div class="mask img-gradient"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Label -->
+                        <h5 class="pink-text pb-2 pt-1"><i class="fa fa-cutlery"></i> Blog</h5>
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">CSS</h4>
+                        <!-- Text -->
+                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                        <!-- Button -->
+                        <a class="btn btn-unique">Button</a>
+
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
+                        alt="Card image cap">
+                        <a>
+                            <div class="mask img-gradient"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Label -->
+                        <h5 class="pink-text pb-2 pt-1"><i class="fa fa-cutlery"></i> Blog</h5>
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">HTML</h4>
+                        <!-- Text -->
+                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                        <!-- Button -->
+                        <a class="btn btn-unique">Button</a>
+
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
+                        alt="Card image cap">
+                        <a>
+                            <div class="mask img-gradient"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Label -->
+                        <h5 class="pink-text pb-2 pt-1"><i class="fa fa-cutlery"></i> Blog</h5>
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Javascript</h4>
+                        <!-- Text -->
+                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                        <!-- Button -->
+                        <a class="btn btn-unique">Button</a>
+
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </div>
+    <!-- Container -->
+
+</section>
+<!--Section: articles-->
+
+<!--Section: contact-->
+<section id="contact" class="py-5" style="background-color: #eee;">
+
+    <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact Me</h2>
+        <!-- Section description -->
+        <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-9 mb-md-0 mb-5">
+
+                <form>
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="contact-name" class="form-control">
+                                <label for="contact-name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="contact-email" class="form-control">
+                                <label for="contact-email" class="">Your email</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="contact-Subject" class="form-control">
+                                <label for="contact-Subject" class="">Subject</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                                <label for="contact-message">Your message</label>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                </form>
+
+                <div class="text-center text-md-left">
+                    <a class="btn btn-purple btn-md">Send</a>
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <i class="fa fa-map-marker fa-2x purple-text"></i>
+                        <p>DeeTee Manipal</p>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone fa-2x mt-4 purple-text"></i>
+                        <p>+ 01 234 567 89</p>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope fa-2x mt-4 purple-text"></i>
+                        <p class="mb-0">contact@example.com</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+
+</section>
+<!--Section: contact-->
+
+</main>
+<!--Main layout-->
+
+<!-- Footer -->
+<footer class="page-footer font-small pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-twitter"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1">
+                    <i class="fab fa-google-plus"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1">
+                    <i class="fab fa-linkedin"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1">
+                    <i class="fab fa-dribbble"> </i>
+            <li class="list-inline-item">
+                <a href="https://dev.to/sairitish">
+  <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="SaiRitish's DEV Profile" height="30" width="30">
+</a>
+       </li>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+    
+    <!-- Copyright -->
+<!-- hitwebcounter Code START -->
+<p>Unique pageviews</p>
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7443951&style=0024&nbdigits=6&type=ip&initCount=0" title="Web Counter" Alt="counter free"   border="0" >
+</a>    
+<!-- hitwebcounter Code START -->
+<p>Total pageviews</p>
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7443952&style=0030&nbdigits=6&type=page&initCount=0" title="Web Counter" Alt="counter free"   border="0" >
+</a>                                    
+                                                  
+
+</footer>
+<!-- Footer -->
+</body>
+</html>
